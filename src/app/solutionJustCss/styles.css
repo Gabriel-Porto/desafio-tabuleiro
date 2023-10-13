@@ -1,0 +1,45 @@
+.wrapper {
+  background-color: #3d3d3c;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabuleiro {
+  background-color: black;
+  width: 40rem;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.rowEven,
+.rowOdd {
+  display: flex;
+  gap: 0;
+  height: 12.5%;
+  width: 100%;
+}
+
+.casa {
+  height: 100%;
+  width: 12.5%;
+}
+
+.rowEven > .casa:nth-child(even) {
+  background: black;
+}
+
+.rowEven > .casa:nth-child(odd) {
+  background: white;
+}
+
+.rowOdd > .casa:nth-child(even) {
+  background: white;
+}
+
+.rowOdd > .casa:nth-child(odd) {
+  background: black;
+}
